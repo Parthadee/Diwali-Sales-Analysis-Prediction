@@ -1,4 +1,4 @@
-<img src= "https://github.com/Parthadee/Diwali-Sales-Analysis-Prediction/blob/820f17aed5a0e9610dd3ce809cd2ed6eff421109/image/banner.jpeg" />
+<img src= "image/banner.jpeg" />
 
 **Overview:** This project focuses on analyzing the Diwali Sales dataset obtained from Kaggle through exploratory data analysis (EDA). The goal is to gain valuable insights from the data and use them to improve business strategies effectively. Additionally, an interactive sales dashboard was created using Power BI to visualize key insights.
 
@@ -67,4 +67,4 @@
 -  The dataset used for this project is sourced from Kaggle. It contains details of customers and their purchases made during Diwali sales.
 ## Output Screen-shots
 Dashboard in PoweBI
-<img src="https://github.com/Parthadee/Diwali-Sales-Analysis-Prediction/blob/e20e134aaf018bd05274298e4462b07463f2a4b8/image/img.jpg" />
+<img src="image/img.jpg" />
