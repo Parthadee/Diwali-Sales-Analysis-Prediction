@@ -63,7 +63,7 @@
   - ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 **Dataset**
--  ``` https://github.com/Parthadee/Diwali-Sales-Analysis-Prediction/blob/e20e134aaf018bd05274298e4462b07463f2a4b8/Diwali%20Sales%20Data.csv ```
+-  ``` https://www.kaggle.com/datasets/nazishjaveed/diwale-sale-dataset ```
 -  The dataset used for this project is sourced from Kaggle. It contains details of customers and their purchases made during Diwali sales.
 ## Output Screen-shots
 Dashboard in PoweBI
