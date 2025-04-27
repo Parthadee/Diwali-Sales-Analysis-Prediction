@@ -1,0 +1,111 @@
+
+#Created a table first for importing the .csv file
+
+CREATE TABLE Diwali_Sale_Data (
+    user_id INT,
+    cust_name VARCHAR(255),
+    product_id VARCHAR(50),
+    gender VARCHAR(10),
+    age_group VARCHAR(10),
+    age INT,
+    marital_status INT,
+    state VARCHAR(100),
+    zone VARCHAR(50),
+    occupation VARCHAR(100),
+    product_category VARCHAR(100),
+    orders INT,
+    amount NUMERIC(10,2),
+    status NUMERIC(10,2), -- could also be NULL
+    unnamed1 NUMERIC(10,2) -- looks like unnecessary column
+);
+
+
+#importing the table from .csv
+
+COPY diwali_sale_data (
+    user_id, cust_name, product_id, gender, age_group, age, marital_status, state, zone, occupation, product_category, orders, amount
+)
+FROM 'C:\Program Files\PostgreSQL\17\Diwali_Sales_Cleaned.csv'
+DELIMITER ',' 
+CSV HEADER;
+
+
+#showing the entire table 
+
+select *
+from Diwali_Sale_Data
+
+
+#showing the user_id 
+
+Select user_id
+from diwali_sale_data
+
+#showing the all female and male buying the products
+
+Select gender, count(*)
+from diwali_sale_data
+Group By gender;
+
+#showing the number of customer buys the product
+
+Select count(cust_name)
+from diwali_sale_data
+
+#showing the number marital people are buys the product
+
+Select count(marital_status)
+from diwali_Sale_data
+where marital_status = 0;
+
+#showing how many states
+
+Select distinct state
+from diwali_sale_data
+
+#showing how many zone cover
+
+Select distinct zone
+from diwali_sale_data
+
+#showing how many zone highest sales
+
+Select zone,count(*)
+from diwali_sale_data
+Group By zone;
+
+#showing how many occupation buys the product
+
+Select Distinct occupation
+From diwali_sale_data
+
+#showing how many buyer from IT sector
+
+Select Count(occupation)
+from diwali_sale_data
+where occupation = 'IT Sector';
+
+#Showing the orders
+
+Select sum(Orders)
+From diwali_sale_data
+
+#showing how many product category
+
+select Distinct count(product_category)
+from diwali_sale_data
+
+#showing the total product
+
+select Distinct product_category
+from diwali_sale_data
+
+#showing the total amount of the sales
+
+select sum(amount)
+from diwali_sale_data
+
+#showing the average amount of the sales
+
+select avg(amount)
+from diwali_sale_data
