@@ -1,6 +1,7 @@
-<img src= "image/banner.jpeg" />
-
+# Customer Shopping Behavior Analysis
 **Overview:** This project focuses on analyzing the Diwali Sales dataset obtained from Kaggle through exploratory data analysis (EDA). The goal is to gain valuable insights from the data and use them to improve business strategies effectively. Additionally, an interactive sales dashboard was created using Power BI to visualize key insights.
+
+<img src= "image/banner.jpeg" />
 
 **Objective:** 
 - Improve customer experience by analyzing sales data.
